@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USBMenu – Support</title>
+<meta name="description" content="USBMenu shows a live list of the USB devices connected to your Mac, right in the menu bar.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <img src="icon.png" alt="USBMenu app icon">
+  <div>
+    <h1>USBMenu</h1>
+    <p class="tag">A live list of your Mac's USB devices, right in the menu bar.</p>
+    <nav><a href="#help">Help</a><a href="#contact">Contact</a><a href="privacy.html">Privacy Policy</a></nav>
+  </div>
+</header>
+
+<section>
+  <h2>What it does</h2>
+  <ul>
+    <li>Lists every connected USB device and updates the moment you plug something in or remove it</li>
+    <li>Shows each device's serial port, vendor, VID:PID, serial number and location. Click any value to copy it</li>
+    <li>Names popular maker boards (Arduino, Teensy, Raspberry Pi RP2040, ESP32 and more) and common USB-serial chips</li>
+    <li>Shows the network interface and IP address of USB network devices</li>
+  </ul>
+</section>
+
+<section id="help">
+  <h2>Help</h2>
+  <p><strong>Where is the app?</strong> USBMenu has no Dock icon or window. Look for the connector icon with a number at the top right of your screen, in the menu bar. If your menu bar is crowded, the icon may be hidden behind the notch; quit a few other menu bar apps to make room.</p>
+  <p><strong>My device doesn't show up.</strong> Make sure the cable carries data. Many USB cables only charge. Try another cable or port.</p>
+  <p><strong>My board shows a chip name (like CH340) instead of the board's name.</strong> Many clone and ESP32 boards use a generic USB-serial chip, which reports the chip's ID instead of the board's. USBMenu shows the chip so you still know which port is which.</p>
+  <p><strong>A USB network device has no IP.</strong> Its IP appears a few seconds after plug-in, once your Mac gets an address. The device's own IP appears after your Mac has exchanged some traffic with it. Pinging it once is enough.</p>
+  <p><strong>How do I start it automatically?</strong> Choose <em>Launch at Login</em> in the USBMenu menu.</p>
+  <p><strong>How do I bring back the welcome dialog?</strong> Choose <em>Show Welcome…</em> in the USBMenu menu.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Questions, bug reports or a board you'd like USBMenu to recognize? Email <a href="mailto:raul@silvadesign.com">raul@silvadesign.com</a>. For a board request, include its VID:PID from the device's submenu.</p>
+</section>
+
+<footer>© 2026 Raul Silva · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
